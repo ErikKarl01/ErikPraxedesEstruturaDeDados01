@@ -82,7 +82,7 @@ void compararsal(struct Funcionario individuo[], int qt)
 		}
 	}
 	printf("\n");
-	printf("O menor sal·rio foi de %s no valor de %.2f\n", individuo[indexmenor].nome, menor);
+	printf("O menor sal√°rio foi de %s no valor de %.2f\n", individuo[indexmenor].nome, menor);
 	printf("O maior salario foi de %s no valor de %.2f\n", individuo[indexmaior].nome, maior);
 }
 
@@ -97,7 +97,7 @@ void alterarsal(struct Funcionario *individuo)
 int main(void)
 {
 	int qt;
-	printf("Escolha uma quantidade de funcion·rios para cadastrar: \n");
+	printf("Escolha uma quantidade de funcion√°rios para cadastrar: \n");
 	scanf("%d", &qt);
 	printf("\n");
 	
@@ -112,7 +112,7 @@ int main(void)
 	
 	
 	printf("\n");
-	printf("Deseja aumentar o salario?\n");
+	printf("Deseja aumentar o salario(sim ou nao)?\n");
 	scanf("%s", resposta);
 	if (strcmp(resposta, "sim")==0)
 	{
@@ -120,7 +120,7 @@ int main(void)
 		if(index == -1)
 		{
 			printf("\n");
-			printf("Pessoa n„o encontrada\n");
+			printf("Pessoa n√£o encontrada\n");
 		}
 		else
 		{
