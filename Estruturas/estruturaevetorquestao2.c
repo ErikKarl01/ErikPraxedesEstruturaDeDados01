@@ -20,7 +20,7 @@ void registrar (struct Pessoa *individuo) //ponteiro para primeiro elemento arra
 		printf("Nome:\n");
 		scanf(" %[^\n]s", individuo[i].nome);
 		printf("Idade:\n");
-		scanf("%d", &individuo[i].idade);//fornecer endereÁo do primeiro elemento
+		scanf("%d", &individuo[i].idade);//fornecer endere√ßo do primeiro elemento
 		printf("Documento:\n");
 		scanf("%d", &individuo[i].documento);
 		printf("\n");
@@ -67,7 +67,7 @@ int attidade(struct Pessoa *individuo)
 	else
 	{
 		printf("\n");
-		printf("Pessoa n„o encontrada!\n");
+		printf("Pessoa n√£o encontrada!\n");
 		return 0;
 	}
 	
@@ -95,8 +95,8 @@ void compararidade(struct Pessoa individuo[])
 		}
 	}
 	printf("\n");
-	printf("A pessoa de maior idade È %s de idade %d\n", individuo[indexmaior].nome, maior);
-	printf("A pessoa de menor idade È %s de idade %d\n", individuo[indexmenor].nome, menor);
+	printf("A pessoa de maior idade √© %s de idade %d\n", individuo[indexmaior].nome, maior);
+	printf("A pessoa de menor idade √© %s de idade %d\n", individuo[indexmenor].nome, menor);
 	printf("\n");
 }
 
@@ -110,7 +110,7 @@ int main(void)
 	registrar(individuo);
 	listar(individuo);
 	while(true){
-		printf("Deseja atualizar a idade de uma pessoa?\n");
+		printf("Deseja atualizar a idade de uma pessoa(sim ou nao)?\n");
 		scanf("%s", continuar);
 		if(strcmp(continuar, "sim") == 0)
 		{
